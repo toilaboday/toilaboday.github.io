@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+thuocnam.autowebsite.vn	TRUE	/	FALSE	1999999999	woocommerce_recently_viewed	182%7C179%7C174%7C162%7C172%7C169%7C165%7C156
+

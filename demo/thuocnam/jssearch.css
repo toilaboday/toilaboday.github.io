@@ -1,0 +1,11 @@
+.box-search>.form-inline{
+	 z-index: 9999;
+}
+span#query{
+	display:none;
+}
+ul#results{
+    background: white;
+    padding: 10px;
+	display:none;
+}
