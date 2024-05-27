@@ -1,0 +1,70 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#desert {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('desert.png') no-repeat center center;
+    background-size: cover;
+}
+
+#moon {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 150px;
+    height: 150px;
+    background: url('moon.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#stars-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: auto;
+    transition: opacity 1s ease-in-out;
+}
+
+.star:hover {
+    opacity: 1 !important;
+}
+
+.star:hover::after {
+    content: attr(data-info);
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    padding: 10px;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    color: #fff;
+    border-radius: 10px;
+    white-space: nowrap;
+    pointer-events: none;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    animation: galaxy-glow 1.5s infinite alternate;
+}
+
+@keyframes galaxy-glow {
+    from {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
